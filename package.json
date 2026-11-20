@@ -1,7 +1,7 @@
 {
-  "name": "company-dossier",
+  "name": "@helve-dev/company-dossier",
   "version": "0.1.0",
-  "description": "Open-source Company & SEC Research Dossier CLI — queries web search, page extraction, Exa answers & competitors, Brave news, SEC EDGAR filings, GitHub, and Hacker News through one HELVE_API_KEY with per-call USD cost tracking.",
+  "description": "Open-source Company & SEC Research Dossier CLI \u2014 queries web search, page extraction, Exa answers & competitors, Brave news, SEC EDGAR filings, GitHub, and Hacker News through one HELVE_API_KEY with per-call USD cost tracking.",
   "type": "module",
   "license": "MIT",
   "bin": {
@@ -30,5 +30,15 @@
     "type": "git",
     "url": "https://github.com/helve-dev/company-dossier.git"
   },
-  "homepage": "https://github.com/helve-dev/company-dossier#readme"
+  "homepage": "https://github.com/helve-dev/company-dossier#readme",
+  "files": [
+    "bin/",
+    "src/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

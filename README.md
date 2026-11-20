@@ -4,6 +4,7 @@
 
 [![Node >= 18](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](#quick-start)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-blue)](#architecture)
+[![npm](https://img.shields.io/npm/v/%40helve-dev%2Fcompany-dossier)](https://www.npmjs.com/package/@helve-dev/company-dossier)
 [![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)](./LICENSE)
 
 Instead of juggling separate accounts and SDKs for Exa, Firecrawl, Brave, SEC EDGAR, GitHub, Hacker News, and OpenRouter, `company-dossier` fans out in parallel through a single `HELVE_API_KEY`, prints an exact per-call USD cost ledger, enforces a budget cap (`--max-cost` + server-side `spend_limit_usd`), and guarantees **$0.00 charged on failed upstream calls**.
@@ -12,17 +13,22 @@ Instead of juggling separate accounts and SDKs for Exa, Firecrawl, Brave, SEC ED
 
 ## Quick Start
 
-### 1. Try it right now (no API key required)
+### 1. Try it in one command (zero clone, no API key required)
+
+```bash
+# Run the offline demo and inspect the generated dossier + cost ledger
+npx @helve-dev/company-dossier "NVIDIA" --ticker NVDA --cik 0001045810 --url https://www.nvidia.com --synthesize --demo
+
+# Or query the live Helve tool catalog with zero auth
+npx @helve-dev/company-dossier --discover "sec filings company research"
+```
+
+Or clone and run locally:
 
 ```bash
 git clone https://github.com/helve-dev/company-dossier.git
 cd company-dossier
-
-# Run the offline demo and inspect the generated dossier + cost ledger
 node bin/dossier.mjs "NVIDIA" --ticker NVDA --cik 0001045810 --url https://www.nvidia.com --synthesize --demo
-
-# Or query the live Helve tool catalog with zero auth
-node bin/dossier.mjs --discover "sec filings company research"
 ```
 
 ### 2. Run live research on any public or private company
