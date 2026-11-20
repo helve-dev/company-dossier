@@ -1,0 +1,34 @@
+{
+  "name": "company-dossier",
+  "version": "0.1.0",
+  "description": "Open-source Company & SEC Research Dossier CLI — queries web search, page extraction, Exa answers & competitors, Brave news, SEC EDGAR filings, GitHub, and Hacker News through one HELVE_API_KEY with per-call USD cost tracking.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "company-dossier": "./bin/dossier.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node ./bin/dossier.mjs",
+    "demo": "node ./bin/dossier.mjs NVIDIA --ticker NVDA --url https://www.nvidia.com --demo",
+    "discover": "node ./bin/dossier.mjs --discover",
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "company-research",
+    "sec-edgar",
+    "deep-research",
+    "ai-agent",
+    "cli",
+    "helve",
+    "mcp",
+    "osint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/helve-dev/company-dossier.git"
+  },
+  "homepage": "https://github.com/helve-dev/company-dossier#readme"
+}
