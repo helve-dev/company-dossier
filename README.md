@@ -36,7 +36,7 @@ node bin/dossier.mjs "NVIDIA" --ticker NVDA --cik 0001045810 --url https://www.n
 Get a key at **[helve.dev](https://helve.dev)** (`$1.00` free starter credit, 0% per-call markup, no monthly subscription required):
 
 ```bash
-export HELVE_API_KEY="hlv_your_key_here"
+export HELVE_API_KEY="sk_live_your_key_here"
 
 # Private company (web fusion search, homepage extract, Exa Q&A, competitors, news, GitHub, HN + AI brief)
 node bin/dossier.mjs "Stripe" --url https://stripe.com --synthesize --out stripe.md

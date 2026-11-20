@@ -96,7 +96,7 @@ Examples:
   company-dossier --discover "sec filings and web extraction"
 
   # Run live research with one HELVE_API_KEY:
-  export HELVE_API_KEY=hlv_...
+  export HELVE_API_KEY=sk_live_...
   company-dossier "Stripe" --url https://stripe.com --synthesize --out stripe.md
   company-dossier "NVIDIA" --ticker NVDA --cik 0001045810 --url https://www.nvidia.com --out nvda.md
 `;
@@ -136,7 +136,7 @@ export async function runCli(argv, { stdout = process.stdout, stderr = process.s
         `  1. Try offline demo mode:   company-dossier "${opts.company}" --demo\n` +
         `  2. Browse live tools free:  company-dossier --discover\n` +
         `  3. Run live research:       Get a key at https://helve.dev ($1.00 free starter credit, 0% markup)\n` +
-        `                              export HELVE_API_KEY=hlv_...\n`
+        `                              export HELVE_API_KEY=sk_live_...\n`
     );
     return 1;
   }

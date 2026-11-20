@@ -87,7 +87,7 @@ test("HelveClient handles 402 spend_limit_exceeded and 502 failed-call escrow ($
     );
   };
 
-  const client = new HelveClient({ apiKey: "hlv_test", fetchImpl: mockFetch });
+  const client = new HelveClient({ apiKey: "sk_live_test", fetchImpl: mockFetch });
   const capped = await client.callTool("exa.answer", { query: "test", text: true });
   assert.equal(capped.ok, false);
   assert.equal(capped.status, "budget_capped");
