@@ -135,7 +135,7 @@ export async function runCli(argv, { stdout = process.stdout, stderr = process.s
       `Error: HELVE_API_KEY is not set.\n\n` +
         `  1. Try offline demo mode:   company-dossier "${opts.company}" --demo\n` +
         `  2. Browse live tools free:  company-dossier --discover\n` +
-        `  3. Run live research:       Get a key at https://helve.dev ($0.50 free starter credit)\n` +
+        `  3. Run live research:       Get a key at https://helve.dev ($1.00 free starter credit, 0% markup)\n` +
         `                              export HELVE_API_KEY=hlv_...\n`
     );
     return 1;

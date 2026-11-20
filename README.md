@@ -33,7 +33,7 @@ node bin/dossier.mjs "NVIDIA" --ticker NVDA --cik 0001045810 --url https://www.n
 
 ### 2. Run live research on any public or private company
 
-Get a key at **[helve.dev](https://helve.dev)** (`$0.50` free starter credit, no monthly subscription required):
+Get a key at **[helve.dev](https://helve.dev)** (`$1.00` free starter credit, 0% per-call markup, no monthly subscription required):
 
 ```bash
 export HELVE_API_KEY="hlv_your_key_here"
